@@ -27,7 +27,7 @@
             align-items: flex-start;
         }
 
-        /* Automation Control Panel */
+        /* Control Panel */
         .control-panel {
             flex: 0 0 380px;
             background: #ffffff;
@@ -342,7 +342,7 @@
             color: #000;
         }
 
-        /* Page 1 Bottom Notice Box */
+        /* Page 1 Bottom Notice Box (Top + Left + Right borders, No Bottom Border) */
         .page1-bottom-notice {
             margin-top: auto;
             border-top: 1px solid #555;
@@ -379,7 +379,7 @@
             font-size: 11.5px;
         }
 
-        /* PAGE 2 STYLES */
+        /* PAGE 2 STYLES (Side Borders + Bottom Border on outer container) */
         .page-2-bordered-container {
             border-left: 1px solid #777;
             border-right: 1px solid #777;
@@ -426,7 +426,7 @@
             line-height: 1.45;
         }
 
-        /* Active Footer Links Table */
+        /* Table Box for Important Legal Notices & Adobe Reader */
         .p2-table-wrapper {
             width: 100%;
             border-collapse: collapse;
@@ -437,7 +437,7 @@
         .p2-table-wrapper td {
             width: 50%;
             border: 1px solid #999;
-            padding: 14px 10px;
+            padding: 16px 10px;
             text-align: center;
             vertical-align: middle;
             background: #fff;
@@ -451,25 +451,31 @@
             cursor: pointer;
         }
 
-        .footer-action-link:hover .p2-footer-link {
-            text-decoration: underline;
-            color: #0000aa;
+        /* Exact Vector Icons */
+        .pdf-icon-exact {
+            height: 48px;
+            width: auto;
+            margin-bottom: 8px;
+            display: block;
         }
 
-        .p2-footer-logo {
+        .adobe-badge-exact {
             height: 38px;
             width: auto;
-            max-width: 120px;
+            margin-bottom: 8px;
             display: block;
-            margin: 0 auto 6px auto;
-            object-fit: contain;
         }
 
         .p2-footer-link {
-            font-size: 12px;
+            font-size: 13px;
             color: #0000ee;
             text-decoration: underline;
             font-weight: bold;
+            letter-spacing: 0.2px;
+        }
+
+        .footer-action-link:hover .p2-footer-link {
+            color: #000088;
         }
 
         /* Print Settings (Centered A4 Layout) */
@@ -802,7 +808,6 @@
                         <rect x="15" y="2" width="3" height="50" fill="#000" />
 
                         <g fill="#000">
-                            <!-- Col 1 -->
                             <rect x="22" y="2" width="4" height="9" /><rect x="29" y="2" width="3" height="9" /><rect x="36" y="2" width="3" height="9" />
                             <rect x="23" y="11" width="2" height="8" /><rect x="28" y="11" width="5" height="8" /><rect x="37" y="11" width="4" height="8" />
                             <rect x="21" y="19" width="5" height="9" /><rect x="30" y="19" width="3" height="9" /><rect x="36" y="19" width="2" height="9" />
@@ -810,7 +815,6 @@
                             <rect x="22" y="37" width="5" height="8" /><rect x="31" y="37" width="2" height="8" /><rect x="36" y="37" width="4" height="8" />
                             <rect x="23" y="45" width="3" height="7" /><rect x="28" y="45" width="6" height="7" /><rect x="37" y="45" width="2" height="7" />
 
-                            <!-- Col 2 -->
                             <rect x="43" y="2" width="3" height="9" /><rect x="49" y="2" width="5" height="9" /><rect x="57" y="2" width="4" height="9" />
                             <rect x="42" y="11" width="5" height="8" /><rect x="50" y="11" width="3" height="8" /><rect x="56" y="11" width="3" height="8" />
                             <rect x="44" y="19" width="2" height="9" /><rect x="49" y="19" width="6" height="9" /><rect x="58" y="19" width="4" height="9" />
@@ -818,7 +822,6 @@
                             <rect x="42" y="37" width="6" height="8" /><rect x="51" y="37" width="3" height="8" /><rect x="57" y="37" width="3" height="8" />
                             <rect x="44" y="45" width="3" height="7" /><rect x="50" y="45" width="4" height="7" /><rect x="58" y="45" width="4" height="7" />
 
-                            <!-- Col 3 -->
                             <rect x="64" y="2" width="5" height="9" /><rect x="73" y="2" width="2" height="9" /><rect x="78" y="2" width="4" height="9" />
                             <rect x="65" y="11" width="2" height="8" /><rect x="70" y="11" width="6" height="8" /><rect x="79" y="11" width="3" height="8" />
                             <rect x="63" y="19" width="5" height="9" /><rect x="72" y="19" width="3" height="9" /><rect x="78" y="19" width="4" height="9" />
@@ -826,7 +829,6 @@
                             <rect x="64" y="37" width="4" height="8" /><rect x="71" y="37" width="5" height="8" /><rect x="79" y="37" width="3" height="8" />
                             <rect x="65" y="45" width="5" height="7" /><rect x="73" y="45" width="2" height="7" /><rect x="78" y="45" width="4" height="7" />
 
-                            <!-- Col 4 -->
                             <rect x="86" y="2" width="3" height="9" /><rect x="92" y="2" width="5" height="9" /><rect x="100" y="2" width="3" height="9" />
                             <rect x="85" y="11" width="6" height="8" /><rect x="94" y="11" width="2" height="8" /><rect x="99" y="11" width="5" height="8" />
                             <rect x="87" y="19" width="2" height="9" /><rect x="92" y="19" width="6" height="9" /><rect x="101" y="19" width="2" height="9" />
@@ -834,7 +836,6 @@
                             <rect x="88" y="37" width="3" height="8" /><rect x="94" y="37" width="4" height="8" /><rect x="100" y="37" width="4" height="8" />
                             <rect x="86" y="45" width="4" height="7" /><rect x="93" y="45" width="5" height="7" /><rect x="101" y="45" width="3" height="7" />
 
-                            <!-- Col 5 -->
                             <rect x="108" y="2" width="4" height="9" /><rect x="115" y="2" width="3" height="9" /><rect x="122" y="2" width="4" height="9" />
                             <rect x="107" y="11" width="3" height="8" /><rect x="113" y="11" width="6" height="8" /><rect x="123" y="11" width="3" height="8" />
                             <rect x="109" y="19" width="5" height="9" /><rect x="117" y="19" width="2" height="9" /><rect x="121" y="19" width="5" height="9" />
@@ -842,7 +843,6 @@
                             <rect x="108" y="37" width="6" height="8" /><rect x="116" y="37" width="3" height="8" /><rect x="123" y="37" width="4" height="8" />
                             <rect x="109" y="45" width="3" height="7" /><rect x="115" y="45" width="4" height="7" /><rect x="122" y="45" width="5" height="7" />
 
-                            <!-- Col 6 -->
                             <rect x="129" y="2" width="5" height="9" /><rect x="137" y="2" width="3" height="9" /><rect x="144" y="2" width="3" height="9" />
                             <rect x="130" y="11" width="2" height="8" /><rect x="135" y="11" width="5" height="8" /><rect x="143" y="11" width="5" height="8" />
                             <rect x="128" y="19" width="6" height="9" /><rect x="137" y="19" width="2" height="9" /><rect x="142" y="19" width="4" height="9" />
@@ -850,7 +850,6 @@
                             <rect x="129" y="37" width="4" height="8" /><rect x="136" y="37" width="3" height="8" /><rect x="142" y="37" width="6" height="8" />
                             <rect x="130" y="45" width="5" height="7" /><rect x="138" y="45" width="4" height="7" /><rect x="145" y="45" width="3" height="7" />
 
-                            <!-- Col 7 -->
                             <rect x="151" y="2" width="3" height="9" /><rect x="157" y="2" width="6" height="9" /><rect x="166" y="2" width="3" height="9" />
                             <rect x="152" y="11" width="5" height="8" /><rect x="160" y="11" width="3" height="8" /><rect x="165" y="11" width="4" height="8" />
                             <rect x="150" y="19" width="4" height="9" /><rect x="157" y="19" width="4" height="9" /><rect x="165" y="19" width="5" height="9" />
@@ -858,7 +857,6 @@
                             <rect x="151" y="37" width="6" height="8" /><rect x="160" y="37" width="3" height="8" /><rect x="166" y="37" width="3" height="8" />
                             <rect x="152" y="45" width="4" height="7" /><rect x="159" y="45" width="5" height="7" /><rect x="167" y="45" width="3" height="7" />
 
-                            <!-- Col 8 -->
                             <rect x="173" y="2" width="5" height="9" /><rect x="181" y="2" width="3" height="9" /><rect x="187" y="2" width="4" height="9" />
                             <rect x="174" y="11" width="2" height="8" /><rect x="179" y="11" width="6" height="8" /><rect x="188" y="11" width="3" height="8" />
                             <rect x="172" y="19" width="6" height="9" /><rect x="182" y="19" width="2" height="9" /><rect x="187" y="19" width="4" height="9" />
@@ -866,7 +864,6 @@
                             <rect x="173" y="37" width="3" height="8" /><rect x="179" y="37" width="5" height="8" /><rect x="187" y="37" width="5" height="8" />
                             <rect x="174" y="45" width="5" height="7" /><rect x="182" y="45" width="3" height="7" /><rect x="188" y="45" width="4" height="7" />
 
-                            <!-- Col 9 -->
                             <rect x="195" y="2" width="4" height="9" /><rect x="202" y="2" width="4" height="9" /><rect x="209" y="2" width="4" height="9" />
                             <rect x="196" y="11" width="5" height="8" /><rect x="204" y="11" width="3" height="8" /><rect x="210" y="11" width="3" height="8" />
                             <rect x="194" y="19" width="3" height="9" /><rect x="200" y="19" width="5" height="9" /><rect x="208" y="19" width="5" height="9" />
@@ -875,7 +872,6 @@
                             <rect x="196" y="45" width="3" height="7" /><rect x="201" y="45" width="6" height="7" /><rect x="210" y="45" width="3" height="7" />
                         </g>
 
-                        <!-- Stop Bar -->
                         <rect x="218" y="2" width="8" height="50" fill="#000" />
                         <rect x="229" y="2" width="2" height="50" fill="#000" />
                         <rect x="234" y="2" width="4" height="50" fill="#000" />
@@ -899,7 +895,7 @@
 
             </div>
 
-            <!-- PAGE 2: EXACT MATCH (Side and bottom border + Working Clickable Links) -->
+            <!-- PAGE 2: EXACT MATCH (Side and bottom border) -->
             <div class="a4-page">
                 <div class="page-2-bordered-container">
                     <div class="page-2-body">
@@ -960,14 +956,19 @@
                             <tr>
                                 <td>
                                     <a href="https://www.batikair.com" target="_blank" class="footer-action-link" title="Click to view Legal Notices">
-                                        <!-- PDF Adobe Document Graphic Vector -->
-                                        <svg class="p2-footer-logo" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15,5 L65,5 L85,25 L85,115 L15,115 Z" fill="#ffffff" stroke="#333333" stroke-width="3"/>
-                                            <polygon points="65,5 65,25 85,25" fill="#e0e0e0" stroke="#333333" stroke-width="2"/>
-                                            <rect x="22" y="28" width="56" height="24" rx="3" fill="#e51a24" />
-                                            <text x="50" y="45" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">PDF</text>
-                                            <path d="M42,95 C45,78 50,62 55,62 C62,62 58,74 52,86 C65,84 76,86 78,90 C80,94 72,96 64,94 C54,96 46,102 40,105 C34,107 32,102 36,98 C40,94 42,95 42,95 Z" fill="none" stroke="#e51a24" stroke-width="3"/>
-                                            <text x="50" y="110" fill="#333333" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Adobe</text>
+                                        <!-- Exact PDF Document Icon as in image_a9655e.png -->
+                                        <svg class="pdf-icon-exact" viewBox="0 0 52 64" xmlns="http://www.w3.org/2000/svg">
+                                            <!-- Document outline -->
+                                            <path d="M4 2 L36 2 L48 14 L48 62 L4 62 Z" fill="#ffffff" stroke="#222222" stroke-width="2.5" stroke-linejoin="round"/>
+                                            <!-- Folded top corner -->
+                                            <polygon points="36,2 36,14 48,14" fill="#d9d9d9" stroke="#222222" stroke-width="2"/>
+                                            <!-- Red PDF Label Box -->
+                                            <rect x="8" y="16" width="36" height="18" rx="2" fill="#e51a24" />
+                                            <text x="26" y="30" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">PDF</text>
+                                            <!-- Red Adobe Acrobat Loop Signature -->
+                                            <path d="M21 54 C23 42 26 31 30 31 C35 31 33 40 28 50 C37 49 44 50 45 52 C46 54 41 55 36 54 C30 55 25 60 22 61 C19 62 18 58 20 56 C22 54 23 55 23 55 Z" fill="none" stroke="#e51a24" stroke-width="2.4" stroke-linecap="round"/>
+                                            <!-- Sub Adobe Text -->
+                                            <text x="26" y="60" fill="#222222" font-family="Arial, sans-serif" font-size="7" font-weight="bold" text-anchor="middle">Adobe</text>
                                         </svg>
                                         <span class="p2-footer-link">Important Legal Notices</span>
                                     </a>
@@ -975,12 +976,13 @@
                                 <td>
                                     <a href="https://get.adobe.com/reader/" target="_blank" class="footer-action-link" title="Click to download Adobe Acrobat Reader">
                                         <!-- Official Get Adobe Reader Badge Graphic Vector -->
-                                        <svg class="p2-footer-logo" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="2" y="2" width="196" height="56" rx="4" fill="#ffffff" stroke="#c0c0c0" stroke-width="2"/>
-                                            <path d="M130,4 C145,20 165,48 198,58 L198,4 Z" fill="#ff0000" />
-                                            <path d="M150,4 C165,15 180,35 198,40 L198,4 Z" fill="#b30000" />
-                                            <text x="75" y="28" fill="#d82424" font-family="'Times New Roman', serif" font-size="22" font-style="italic">Get Adobe®</text>
-                                            <text x="82" y="48" fill="#111111" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Reader®</text>
+                                        <svg class="adobe-badge-exact" viewBox="0 0 170 48" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2" y="2" width="166" height="44" rx="4" fill="#ffffff" stroke="#999999" stroke-width="2"/>
+                                            <!-- Adobe Red Wave Ribbon -->
+                                            <path d="M112 2 C124 16 140 38 166 46 L166 2 Z" fill="#eb1000" />
+                                            <path d="M125 2 C137 13 150 28 166 32 L166 2 Z" fill="#990000" />
+                                            <text x="60" y="22" fill="#d02020" font-family="'Times New Roman', serif" font-size="18" font-style="italic">Get Adobe®</text>
+                                            <text x="66" y="39" fill="#111111" font-family="Arial, sans-serif" font-size="15" font-weight="bold">Reader®</text>
                                         </svg>
                                         <span class="p2-footer-link">Get Adobe Reader®</span>
                                     </a>
